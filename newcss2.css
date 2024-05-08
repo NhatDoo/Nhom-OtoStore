@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    min-height: calc(100vh - 100px); /* 100px lÃ  chiá»u cao dá»± kiáº¿n cá»§a footer */
+    background: linear-gradient(to bottom, #add8e6, #bfefff);
+    padding-bottom: 100px; /* Äáº£m báº£o footer khÃ´ng che khuáº¥t ná»™i dung */
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px; /* Chiá»u cao cá»§a footer */
+    background-color: #333; /* MÃ u ná»n cá»§a footer */
+    color: #fff; /* MÃ u vÄƒn báº£n cá»§a footer */
+    text-align: center;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 200px;
+}
+.custom-table {
+  width: 100%;
+  border-collapse: collapse; /* Äáº£m báº£o cÃ¡c Ã´ trong báº£ng náº±m cháº·t vÃ o nhau */
+}
+
+.custom-table th, .custom-table td {
+  border: 1px solid #ccc; /* Äá»‹nh dáº¡ng Ä‘Æ°á»ng viá»n cá»§a cÃ¡c Ã´ */
+  padding: 8px; /* Khoáº£ng cÃ¡ch giá»¯a ná»™i dung vÃ  Ä‘Æ°á»ng viá»n cá»§a Ã´ */
+}
+
+.custom-table th {
+  background-color: #f2f2f2; /* MÃ u ná»n cá»§a cÃ¡c Ã´ header */
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* MÃ u ná»n cá»§a cÃ¡c dÃ²ng cháºµn */
+}
